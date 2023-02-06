@@ -14,6 +14,7 @@ class QuestionService {
     console.log(res.data);
     const questions = res.data.results.map(q => new Question(q))
     console.log(questions);
+    appState.questions = questions
     // appState.questions.push(res.data)
   }
 

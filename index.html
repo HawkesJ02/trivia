@@ -15,24 +15,35 @@
   <title>trivia</title>
 </head>
 
-<body>
+<body class="inverted debug">
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">trivia</span>
-      </a>
-    </nav>
+    <div class="text-center fs-1">
+      <span class="ms-2">TRIVIA AMAZING (I Promise)</span>
+    </div>
   </header>
+
+
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app">
+      <div class="row text-center" id="app">
 
-          </div>
-        </div>
       </div>
     </div>
   </main>
